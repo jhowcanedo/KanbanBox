@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">KanbanBox</string>
+    <string name="nome_projeto">Project Name</string>
+    <string name="novo_projeto">New Project</string>
+    <string name="novo">New</string>
+    <string name="configuracao">Configuration</string>
+    <string name="jhonatan">Jhonatan</string>
+    <string name="canedo">Canedo</string>
+    <string name="nome_do_projeto">Project Name</string>
+    <string name="sobre">About</string>
+    <string name="aviso">Warning</string>
+    <string name="ok">Ok</string>
+    <string name="confirmacao">Confirmation</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="editar">Edit</string>
+    <string name="excluir">Delete</string>
+    <string name="cancelar">Cancel</string>
+    <string name="salvar">Salve</string>
+    <string name="nome_vazio">Name is empty!</string>
+    <string name="desenvolvido">Developer by:</string>
+    <string name="autor">Jhonatan Francisco Canedo da Silva</string>
+    <string name="universidade">Federal Technological University of Paraná</string>
+    <string name="cidade">Cornélio Procópio</string>
+    <string name="ano">2019</string>
+    <string name="todo">To Do</string>
+    <string name="doing">Doing</string>
+    <string name="done">Done</string>
+    <string name="nome">Name</string>
+    <string name="descricao">Description</string>
+    <string name="alterar">Alter</string>
+    <string name="noturno">Night Mode</string>
+    <string name="action_settings">Settings</string>
+    <string name="card">Card Name</string>
+    <string name="new_card">New Card</string>
+    <string name="descricao_vazio">The description is empty!</string>
+</resources>

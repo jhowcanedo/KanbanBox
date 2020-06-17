@@ -1,0 +1,98 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "8761741fd7dc53ab8aa9d0f56d2ae09a",
+    "entities": [
+      {
+        "tableName": "projeto",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "card",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `descricao` TEXT, `projetoId` INTEGER NOT NULL, FOREIGN KEY(`projetoId`) REFERENCES `projeto`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descricao",
+            "columnName": "descricao",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projetoId",
+            "columnName": "projetoId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_card_projetoId",
+            "unique": false,
+            "columnNames": [
+              "projetoId"
+            ],
+            "createSql": "CREATE  INDEX `index_card_projetoId` ON `${TABLE_NAME}` (`projetoId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "projeto",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "projetoId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"8761741fd7dc53ab8aa9d0f56d2ae09a\")"
+    ]
+  }
+}

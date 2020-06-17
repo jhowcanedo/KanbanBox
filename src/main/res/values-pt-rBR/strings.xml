@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KanbanBox</string>
+    <string name="nome_projeto">Nome do Projeto</string>
+    <string name="novo_projeto">Novo Projeto</string>
+    <string name="novo">Novo</string>
+    <string name="configuracao">Configuração</string>
+    <string name="jhonatan">Jhonatan</string>
+    <string name="canedo">Canedo</string>
+    <string name="nome_do_projeto">Nome do Projeto</string>
+    <string name="sobre">Sobre</string>
+    <string name="aviso">Aviso</string>
+    <string name="ok">Ok</string>
+    <string name="confirmacao">Confirmação</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salvar">Salvar</string>
+    <string name="nome_vazio">O nome está vazio!</string>
+    <string name="desenvolvido">Desenvolvido por:</string>
+    <string name="autor">Jhonatan Francisco Canedo da Silva</string>
+    <string name="universidade">Universidade Tecnológica Federal do Paraná</string>
+    <string name="cidade">Cornélio Procópio</string>
+    <string name="ano">2019</string>
+    <string name="todo">À Fazer</string>
+    <string name="doing">Fazendo</string>
+    <string name="done">Feito</string>
+    <string name="nome">Nome</string>
+    <string name="descricao">Descrição</string>
+    <string name="alterar">Alterar</string>
+    <string name="noturno">Modo Noturno</string>
+    <string name="descricao_vazio">A descrição está vazia</string>
+    <string name="new_card">Novo Card</string>
+    <string name="card">Nome do Card</string>
+    <string name="action_settings">Configurações</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="projetos">
+        <item></item>
+    </string-array>
+
+    <string-array name="origem">
+        <item></item>
+    </string-array>
+
+</resources>
